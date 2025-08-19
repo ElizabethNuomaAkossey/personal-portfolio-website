@@ -1,0 +1,282 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     font-family: 'Poppins', sans-serif;
+     scroll-behavior: smooth;
+     background-color: #f2eded;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    padding:12px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    background-color: #fffdfd; 
+    min-height: 44px;
+    align-items: center;
+    /*position: relative; */
+    width: 100%;
+    z-index: 100 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+
+header h2 a{
+    color: #a30d56;
+    text-decoration: none;
+ }
+
+nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+}
+
+nav ul li a:hover{
+    color: #a30d56;
+}
+
+.sun-icon{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 8px;
+    padding-top: 6px;
+    margin-right: 4px;
+    /* font-size: 16px; */
+}
+.sun-icon svg{
+     align-self: center;
+}
+
+.getintouch-btn{
+    background-color: #a30d56;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 8px;
+    width: 120px;
+}
+
+.getintouch-btn:hover{
+    opacity: 0.9;
+}
+
+.getintouch-btn a{
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+}
+
+/* Hero Section */
+.hero{
+    padding-top: 110px;
+    padding-left: 120px;
+    display: flex;
+    min-height: 100vh;
+    /* position: relative; */
+    /* z-index: 1; */
+    background-color: #fff;
+}
+
+.firstname h1{
+    font-size: 60px;
+     margin-top: 0;     
+     margin-bottom: 5px; 
+}
+
+.surname h1{
+    font-size: 60px;
+    color: #a30d56;
+    line-height: 0.5em;
+}
+
+.hero h2{
+    color: rgb(85, 81, 81);
+    margin: 25px 0;
+    font-size: 29px;
+}
+
+.hero p{
+    font-size: 17px;
+}
+
+.social-icons{
+    /* background-color: #a30d56; */
+    padding-top: 20px;
+}
+
+.social-icons i{
+        color: #524d4d;
+        /* size: 100px; */
+        border-color: #000;
+        margin: 30px 0;   
+}
+.social-icons a{
+        padding: 7px;
+        border: 9px;
+        border-color: #000;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        /* margin: 100px 0px; */
+        /* background-color: aqua; */
+        justify-items: space-between;
+        margin-right: 8px;
+}
+
+.hero-bottom-btn{
+    margin: 20px 0px;
+}
+.viewproject-btn{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-color: #524d4d;
+    padding: 10px 12px;
+    margin-left: 15px;
+}
+
+.viewproject-btn:hover{
+    opacity: 0.8;
+}
+
+.viewproject-btn a{
+    color: #000;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+}
+
+.hero-img{
+    width: 315px;
+    height: 315px;
+    border-radius: 50%;
+    border: 5px solid #eac6d8;
+    background-color: #c4c4c4;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-left: 180px; 
+    margin-top: 60px;
+    /* align-content: center; */
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    object-fit: contain;
+}
+
+/* About Section */
+.about-section{
+    width: 100%;
+    min-height: 100vh; 
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.about-section .about-title{
+    text-align: center;
+}
+
+.about-section .about-content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content .about-info {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about-content .about-skills{
+    width: 48%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.about-skills .skill{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    background-color: #fff;
+    padding: 15px 0;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation for view resume */
+/* 
+.cv-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  animation: blink 1.5s infinite;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+} */
