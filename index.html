@@ -18,11 +18,11 @@
         <nav>
             <ul>
                 <li><a href="#about-section">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#technical-skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div>
@@ -41,22 +41,53 @@
             </div>
             <div class="surname">
                 <h1>Akossey</h1>
+                <!--  Pronunciation icon -->
+                <button class="sound-btn" onclick="sayName()">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
             </div>
             <h2>Frontend Developer | Ghana</h2>
             <p>Building responsive web interfaces that improve user <br>experience and support business goals.</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/elizabethnuomaakossey"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/ElizabethNuomaAkossey"><i class="fa-brands fa-github"></i></a>
-                <a href="elizabethnuomaakossey@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="mailto:elizabethnuomaakossey@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 <a href=""><i class="fa-solid fa-phone"></i></a>
             </div>
             <div class="hero-bottom-btn">
-                <button class="getintouch-btn"><a href="">Resume</a></button>
+                <!-- Resume dropdown -->
+                <div class="resume-dropdown">
+                    <button class="getintouch-btn">Resume</button>
+                    <div class="dropdown-content">
+                        <a href="files/Elizabeth_Akossey_Resume.pdf" download>Download</a>
+                        <a href="#" onclick="saySummary()">Summary</a>
+                    </div>
+                </div>
+    
                 <button class="viewproject-btn"><a href="">View Projects</a></button>
             </div>
         </div>
         <div class="hero-img"><img src="pictures/eliza_dp.JPG" alt="Profile photo"></div>
     </section>
+    
+    <!-- SpeechSynthesis Script -->
+    <script>
+        function sayName() {
+            let msg = new SpeechSynthesisUtterance("Elizabeth Nuoma Akossey");
+            msg.rate = 1;
+            msg.pitch = 1;
+            speechSynthesis.speak(msg);
+        }
+
+        function saySummary() {
+            let summary = "This is Elizabeth Nuoma Akossey. A frontend developer from Ghana, skilled in building responsive and user friendly web interfaces using HTML, CSS, JavaScript, and React. Explore my projects and skills to learn more.";
+            let msg = new SpeechSynthesisUtterance(summary);
+            msg.rate = 1;
+            msg.pitch = 1;
+            speechSynthesis.speak(msg);
+        }
+    </script>
+
     <section class="about-section" id="about-section">
         <h2 class="about-title">About Me</h2>
         <div class="about-content">
@@ -86,104 +117,108 @@
                     that make a difference.
                 </p>
             </div>
-            <div class="about-skills">
-                <div class="skill">
-                    <img src="" alt="icons">
-                    <h3>Frontend</h3>
-                    <p></p>
-                </div>
-                <div class="skill">
-                    <img src="" alt="icons">
-                    <h3>Machine Learning</h3>
-                    <p></p>
-                </div>
-                <div class="skill">
-                    <img src="" alt="icons">
-                    <h3>Data Analytics</h3>
-                    <p></p>
-                </div>
-                <div class="skill">
-                    <img src="" alt="icons">
-                    <h3>visualization</h3>
-                    <p></p>
-                </div>
-            </div>
         </div>
     </section>
     <!-- Technical Skills -->
 
-    <section class="skills">
+    <section class="skills" id="technical-skills">
         <h2>Technical Skills</h2>
-        <div class="skills-container">
-            <!-- Languages -->
-            <div class="skill-card">
-                <h3>Programming Languages</h3>
-                <div class="t-skill">
-                    <span>Python</span>
+
+        <div class="technical">
+            <div class="skills-container">
+                <!-- Languages -->
+                <div class="skill-card">
+                    <img class="lang" src="pictures/lang.png" alt="">
+                    <h3>Programming Languages</h3>
+                    <div class="t-skill">
+                        <span>Python</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>SQL</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>HTML</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>CSS</span>
+                    </div>
                 </div>
-                <div class="t-skill">
-                    <span>SQL</span>
-                </div>
-                <div class="t-skill">
-                    <span>HTML</span>
-                </div>
-                <div class="t-skill">
-                    <span>CSS</span>
-                </div>
-            </div>
             
-
-
-            <!-- Frameworks and libraries -->
-            <div class="skill-card">
-                <img class="cog" src="pictures/framework_icon-removebg-preview.png" alt="framework">
-                <h3>Frameworks and Libraries</h3>
-                <div class="t-skill">
-                    <span>Tkinter</span>
+            
+            
+                <!-- Frameworks and libraries -->
+                <div class="skill-card">
+                    <img class="cog" src="pictures/frameworks.png" alt="framework">
+                    <h3>Frameworks and Libraries</h3>
+                    <div class="t-skill">
+                        <span>Tkinter</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>Ttkboostrap</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>Scipy</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>Stats Model</span>
+                    </div>
                 </div>
-                <div class="t-skill">
-                    <span>Ttkboostrap</span>
+            
+            
+            
+                <!-- Tools and platforms -->
+                <div class="skill-card">
+                    <img class="tool" src="pictures/tools.png" alt="tools and platforms">
+                    <h3>Tools and Platforms</h3>
+                    <div class="t-skill">
+                        <span>Git</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>Github</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>Visual Studio Code</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>Netlify</span>
+                    </div>
                 </div>
-                <div class="t-skill">
-                    <span>Scipy</span>
-                </div>
-                <div class="t-skill">
-                    <span>Stats Model</span>
+            
+            
+                <!-- Database Systems -->
+                <div class="skill-card">
+                    <img class="database" src="pictures/database_2383158.png" alt="Database">
+                    <h3>Database Systems</h3>
+                    <div class="t-skill">
+                        <span>My SQL</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>MS SQL Server</span>
+                    </div>
+                    <div class="t-skill">
+                        <span>PostgreSQL</span>
+                    </div>
                 </div>
             </div>
 
-
-
-            <!-- Tools and platforms -->
-            <div class="skill-card">
-                <img  class="tool" src="pictures/tools.png" alt="tools and platforms">
-                <h3>Tools and Platforms</h3>
-                <div class="t-skill">
-                    <span>Netlify</span>
-                </div>
-                <div class="t-skill">
-                    <span>Git and Github</span>
-                </div>
-                <div class="t-skill">
-                    <span>Visual Studio Code</span>
-                </div>
-            </div>
-
-
-            <!-- Database Systems -->
-            <div class="skill-card">
-                <h3>Database Systems</h3>
-                <div class="t-skill">
-                    <span>My SQL</span>
-                </div>
-                <div class="t-skill">
-                    <span>MongoDB</span>
-                </div>
-                <div class="t-skill">
-                    <span>MS SQL Server</span>
-                </div>
-            </div>
         </div>
+
+        
     </section>
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <h2>Professional Experience</h2>
+    </section>
+
+    <!-- Featured Projects -->
+     <section class="project" id="project">
+        <h2>Featured Projects</h2>
+     </section>
+
+     <!-- Education and Cerifications -->
 </body>
 </html>
