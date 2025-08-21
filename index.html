@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elizabeth Akossey</title>
+    <title>Elizabeth Akossey - AI Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <h2><a href="#hero-section">EA</a></h2>
-        <nav>
-            <ul>
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#technical-skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            <button class="sun-icon"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
-                        <path
-                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
-                    </svg></a></button>
-            <button class="getintouch-btn"><a href="">Get in Touch</a></button>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">EA</a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                </div>
+
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
         </div>
     </header>
     <section class="hero" id="hero-section">
@@ -62,392 +66,553 @@
                     <div class="dropdown-content">
                         <a href="files/Elizabeth_Akossey_Resume.pdf" download>Download</a>
                         <a href="#" onclick="saySummary()">Summary</a>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Elizabeth Nuoma
+                        <span class="highlight">Akossey</span>
+                    </h1>
+                    <p class="hero-subtitle">AI Developer | Data Scientist | Ghana</p>
+                    <p class="hero-description">
+                        Building intelligent solutions and responsive web interfaces that improve user experience and support business goals through data-driven insights.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/elizabethnuomaakossey" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ElizabethNuomaAkossey" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:elizabethnuomaakossey@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+233555088881" class="social-link" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-actions">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle">
+                                Resume <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="files/Elizabeth_Akossey_Resume.pdf" download>
+                                    <i class="fas fa-download"></i> Download
+                                </a>
+                                <a href="#" onclick="playResumeSummary()">
+                                    <i class="fas fa-volume-up"></i> Listen
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
                     </div>
                 </div>
-    
-                <button class="viewproject-btn"><a href="">View Projects</a></button>
+
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="pictures/eliza_dp.JPG" alt="Elizabeth Akossey" class="profile-img">
+                        <div class="image-bg"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="hero-img"><img src="pictures/eliza_dp.JPG" alt="Profile photo"></div>
     </section>
-    
-    <!-- SpeechSynthesis Script -->
-    <script>
-        function sayName() {
-            let msg = new SpeechSynthesisUtterance("Elizabeth Nuoma Akossey");
-            msg.rate = 1;
-            msg.pitch = 1;
-            speechSynthesis.speak(msg);
-        }
 
-        function saySummary() {
-            let summary = "This is Elizabeth Nuoma Akossey. A frontend developer from Ghana, skilled in building responsive and user friendly web interfaces using HTML, CSS, JavaScript, and React. Explore my projects and skills to learn more.";
-            let msg = new SpeechSynthesisUtterance(summary);
-            msg.rate = 1;
-            msg.pitch = 1;
-            speechSynthesis.speak(msg);
-        }
-    </script>
     <!-- About Section -->
-    <section class="about-section" id="about-section">
-        <h2 class="about-title">About Me</h2>
-        <div class="about-content">
-            <!-- Left card -->
-            <div class="about-card">
-                <p>
-                    I am an AI Developer based in Accra, Ghana, with a strong background in data analytics,
-                    web development, and technical education. I specialize in transforming complex data into
-                    intelligent solutions using tools like Python, SQL, and modern machine learning techniques.
-                </p>
-                <p>
-                    My expertise spans machine learning, natural language processing, data visualization,
-                    and business intelligence. I also build web interfaces using HTML and CSS to support
-                    data-driven and AI-powered applications.
-                </p>
-            </div>
-    
-            <!-- Right card -->
-            <div class="about-card">
-                <p>
-                    Beyond development, I'm passionate about teaching and mentorship. I've taught web
-                    development to over 50 students, helping them gain valuable digital skills and break
-                    into tech. I actively contribute to open-source projects and enjoy sharing knowledge
-                    to uplift the next generation of AI and data professionals.
-                </p>
-                <p>
-                    Driven by continuous learning and real-world problem solving, I aim to build ethical
-                    and impactful AI solutions that make a difference.
-                </p>
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Data Expertise</h3>
+                    <p>
+                        I am an AI Developer based in Accra, Ghana, with a strong background in data analytics, 
+                        web development, and technical education. I specialize in transforming complex data into 
+                        intelligent solutions using tools like Python, SQL, and modern machine learning techniques.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Technical Skills</h3>
+                    <p>
+                        My expertise spans machine learning, natural language processing, data visualization, 
+                        and business intelligence. I also build web interfaces using HTML and CSS to support 
+                        data-driven and AI-powered applications.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Teaching & Mentorship</h3>
+                    <p>
+                        Beyond development, I'm passionate about teaching and mentorship. I've taught web 
+                        development to over 50 students, helping them gain valuable digital skills and break 
+                        into tech. I actively contribute to open-source projects.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation Focus</h3>
+                    <p>
+                        Driven by continuous learning and real-world problem solving, I aim to build ethical 
+                        and impactful AI solutions that make a difference. I believe technology should serve 
+                        humanity and create positive change.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Technical Skills -->
-
-    <section class="skills" id="technical-skills">
-        <h2>Technical Skills</h2>
-
-        <div class="technical">
-            <div class="skills-container">
-                <!-- Languages -->
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
                 <div class="skill-card">
-                    <img class="lang" src="pictures/lang.png" alt="">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
                     <h3>Programming Languages</h3>
-                    <div class="t-skill">
+                    <div class="skill-tags">
                         <span>Python</span>
-                    </div>
-                    <div class="t-skill">
                         <span>SQL</span>
-                    </div>
-                    <div class="t-skill">
                         <span>HTML</span>
-                    </div>
-                    <div class="t-skill">
                         <span>CSS</span>
+                        <span>JavaScript</span>
                     </div>
                 </div>
-            
-            
-            
-                <!-- Frameworks and libraries -->
+
                 <div class="skill-card">
-                    <img class="cog" src="pictures/frameworks.png" alt="framework">
-                    <h3>Frameworks and Libraries</h3>
-                    <div class="t-skill">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-tags">
                         <span>Tkinter</span>
-                    </div>
-                    <div class="t-skill">
                         <span>Ttkboostrap</span>
-                    </div>
-                    <div class="t-skill">
                         <span>Scipy</span>
-                    </div>
-                    <div class="t-skill">
-                        <span>Stats Model</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-learn</span>
                     </div>
                 </div>
-            
-            
-            
-                <!-- Tools and platforms -->
+
                 <div class="skill-card">
-                    <img class="tool" src="pictures/tools.png" alt="tools and platforms">
-                    <h3>Tools and Platforms</h3>
-                    <div class="t-skill">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
                         <span>Git</span>
-                    </div>
-                    <div class="t-skill">
-                        <span>Github</span>
-                    </div>
-                    <div class="t-skill">
-                        <span>Visual Studio Code</span>
-                    </div>
-                    <div class="t-skill">
+                        <span>GitHub</span>
+                        <span>VS Code</span>
                         <span>Netlify</span>
+                        <span>Jupyter</span>
                     </div>
                 </div>
-            
-            
-                <!-- Database Systems -->
+
                 <div class="skill-card">
-                    <img class="database" src="pictures/database_2383158.png" alt="Database">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
                     <h3>Database Systems</h3>
-                    <div class="t-skill">
-                        <span>My SQL</span>
-                    </div>
-                    <div class="t-skill">
+                    <div class="skill-tags">
+                        <span>MySQL</span>
                         <span>MongoDB</span>
-                    </div>
-                    <div class="t-skill">
                         <span>MS SQL Server</span>
-                    </div>
-                    <div class="t-skill">
                         <span>PostgreSQL</span>
                     </div>
                 </div>
             </div>
-        </div>   
-    </section>
-
-    <!-- Experience -->
-    <section class="experience" id="experience">
-        <h2 class="section-title">Professional Experience</h2>
-    
-        <div class="experience-card">
-            <div class="experience-header">
-                <div>
-                    <h3 class="company">ASUSTEM ROBOTICS</h3>
-                    <p class="job-title">Web Development Coach</p>
-                </div>
-                <div class="job-meta">
-                    <p class="location">Contract</p>
-                    <p class="date">May 2025 – July 2025</p>
-                </div>
-            </div>
-    
-            <ul class="job-responsibilities">
-                <li>Delivered engaging web development lessons to over 50 learners in Tarkwa, covering HTML, CSS and web development fundamentals.</li>
-                <li>Designed and implemented interactive coding activites to promote learner participation and understanding.</li>
-                <li>Assessed learner progress through tests and projects, providing constructive feedback to strengthen their coding skills.</li>
-                <li>Mentored learners in building their first websites, guiding them through the development process and troubleshooting issues.</li>
-                <li>Adapted lesson plans to accomodate challenges such as power outages, ensuring continuity of learning and learner success.</li>
-                <li>Trained learners in presentation skills, empowering them to confidently showcase their projects at the final exhibition.</li>
-            </ul>
-    
-            <div class="skills-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Deployment</span>
-                <span>Presentation</span>
-            </div>
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div class="company-info">
+                                <h3 class="company-name">ASUSTEM ROBOTICS</h3>
+                                <p class="job-title">Web Development Coach</p>
+                            </div>
+                            <div class="job-meta">
+                                <span class="job-type">Contract</span>
+                                <span class="job-duration">May 2025 – July 2025</span>
+                            </div>
+                        </div>
 
-    <!-- Featured Projects -->
-    <section class="projects-section" id="projects">
-        <h2 class="section-title">Featured Projects</h2>
+                        <ul class="responsibilities">
+                            <li>Delivered engaging web development lessons to over 50 learners in Tarkwa, covering HTML, CSS and web development fundamentals.</li>
+                            <li>Designed and implemented interactive coding activities to promote learner participation and understanding.</li>
+                            <li>Assessed learner progress through tests and projects, providing constructive feedback to strengthen their coding skills.</li>
+                            <li>Mentored learners in building their first websites, guiding them through the development process and troubleshooting issues.</li>
+                            <li>Adapted lesson plans to accommodate challenges such as power outages, ensuring continuity of learning and learner success.</li>
+                            <li>Trained learners in presentation skills, empowering them to confidently showcase their projects at the final exhibition.</li>
+                        </ul>
 
-    <div class="projects-container">
-      <!-- Project 1 -->
-      <article class="project-card">
-        <img src="pictures/tarkwadevs.png" alt="tarkwadevs" class="project-img">
-        <h3 class="project-title">Tarkwa Devs Company</h3>
-        <div class="project-buttons">
-          <a href="#" class="btn code-btn"><i class="bi bi-github"></i> Code</a>
-          <a href="https://tarkwadevs.netlify.app/" class="btn demo-btn"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
-        </div>
-      </article>
-
-      <!-- Project 2 -->
-      <article class="project-card">
-        <img src="pictures/Brahabobom.png" alt="Brahabobom" class="project-img">
-        <h3 class="project-title">Brahabobom M/A School</h3>
-        <div class="project-buttons">
-          <a href="#" class="btn code-btn"><i class="bi bi-github"></i> Code</a>
-          <a href="https://brahabobomschool.netlify.app/" class="btn demo-btn"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
-        </div>
-      </article>
-
-      <!-- Project 3 -->
-      <article class="project-card">
-        <img src="pictures/sandybertfood.png" alt="sandyberfood" class="project-img">
-        <h3 class="project-title">Sandybert Food</h3>
-        <div class="project-buttons">
-          <a href="#" class="btn code-btn"><i class="bi bi-github"></i> Code</a> 
-          <a href="https://sandybertfood.netlify.app/" class="btn demo-btn"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
-        </div>
-      </article>
-
-      <!-- Project 4 -->
-      <article class="project-card">
-        <img src="pictures/techskillshub.png" alt="techskillshub" class="project-img">
-        <h3 class="project-title">Techskills hub</h3>
-        <div class="project-buttons">
-          <a href="#" class="btn code-btn"><i class="bi bi-github"></i> Code</a>
-          <a href="https://techskillshub.netlify.app/" class="btn demo-btn"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
-        </div>
-      </article>
-
-      <!-- Project 5 -->
-      <article class="project-card">
-        <img src="images/project5.jpg" alt="Smart Lab Website" class="project-img">
-        <h3 class="project-title">Bank Term Deposit Prediction</h3>
-        <div class="project-buttons">
-          <a href="https://github.com/ElizabethNuomaAkossey/Bank_Term_Deposit-_Prediction" class="btn code-btn"><i class="bi bi-github"></i> Code</a>
-          <a href="#" class="btn demo-btn"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
-        </div>
-      </article>
-
-      <!-- Project 6 -->
-      <article class="project-card">
-        <img src="images/project6.jpg" alt="Cholera Awareness Chatbot" class="project-img">
-        <h3 class="project-title">Cyberbully Detection Model</h3>
-        <div class="project-buttons">
-          <a href="https://github.com/ElizabethNuomaAkossey/Cyberbully-Detection" class="btn code-btn"><i class="bi bi-github"></i> Code</a>
-          <a href="#" class="btn demo-btn"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-
-    <!-- Education and Cerifications -->
-    <section class="edu-cert-section" id="education">
-        <h2 class="edu-cert-heading">Education & Certificates</h2>
-        <div class="edu-cert-container">
-            <!-- Education Card -->
-            <div class="edu-card">
-                <h3 class="edu-card-title">
-                    <i class="fas fa-book-open"></i> Education
-                </h3>
-                <p class="edu-card-subtext1">Academic background</p>
-    
-                <h4 class="edu-subtitle mt-6">Bachelor of Science, Midwifery</h4>
-                <p class="edu-card-subtext">University for Development Studies, Tamale, Ghana</p>
-                <p class="edu-card-subtext">September 2017 – July 2021</p>
-    
-                <h4 class="edu-subtitle mt-6">
-                    <i class="fas fa-award edu-award-icon"></i> Awards
-                </h4>
-                <ul class="edu-awards-list">
-                    <li class="edu-award-item"> <span class="bullet"></span> Most Outstanding Student, Asustem Robotics</li>
-                    <li class="edu-award-item"> <span class="bullet"></span> Most Innovative Project, Blossom Academy</li>
-                </ul>
-            </div>
-    
-            <!-- Certifications Card -->
-            <div class="cert-card">
-                <h2 class="cert-card-title">
-                    <i class="fas fa-certificate"></i> Certificates
-                </h2>
-                <p class="cert-card-subtext1">Professional development</p>
-    
-                <ul class="cert-list mt-6">
-                    <li class="cert-item">
-                        <span class="cert-number">1</span> IBM (Web Development Fundamentals)
-                    </li>
-                    <li class="cert-item">
-                        <span class="cert-number">2</span> Ghana India Kofi Annan Centre of Excellence (Data Analytics with
-                        SQL and PowerBI)
-                    </li>
-                    <li class="cert-item">
-                        <span class="cert-number">3</span> Blossom Academy (Python, Excel, Power BI, SQL)
-                    </li>
-                    <li class="cert-item">
-                        <span class="cert-number">4</span> Asustem Robotics (Python Programming and AI)
-                    </li>
-                    <li class="cert-item">
-                        <span class="cert-number">5</span> CAMFED (Python)
-                    </li>
-                </ul>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Teaching</span>
+                            <span>Mentoring</span>
+                            <span>Deployment</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact-section", id="contact">
-        <h2 class="contact-heading">Get in Touch</h2>
-        <div class="contact-container">
-            <div class="contact-info-card">
-                <h3 class="card-title">Contact Information</h3>
-                <p class="card-subtitle">Feel free to reach out through any of these channels</p>
-                <div class="contact-detail">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <div class="contact-text">
-                        <h4 class="contact-label">Email</h4>
-                        <a href="mailto:elizabethnuomaakossey@gmail.com"
-                            class="contact-value">elizabethnuomaakossey@gmail.com</a>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="pictures/tarkwadevs.png" alt="Tarkwa Devs Company">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://tarkwadevs.netlify.app/" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tarkwa Devs Company</h3>
+                        <p class="project-description">A modern company website showcasing development services and team portfolio.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-detail">
-                    <i class="fas fa-phone-alt contact-icon"></i>
-                    <div class="contact-text">
-                        <h4 class="contact-label">Phone</h4>
-                        <p class="contact-value">+233 555 088 881 / +233 205 358 06</p>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="pictures/Brahabobom.png" alt="Brahabobom School">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://brahabobomschool.netlify.app/" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Brahabobom M/A School</h3>
+                        <p class="project-description">Educational institution website with information about programs and activities.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive Design</span>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-detail">
-                    <i class="fas fa-map-marker-alt contact-icon"></i>
-                    <div class="contact-text">
-                        <h4 class="contact-label">Location</h4>
-                        <p class="contact-value">Accra, Ghana</p>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="pictures/sandybertfood.png" alt="Sandybert Food">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://sandybertfood.netlify.app/" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sandybert Food</h3>
+                        <p class="project-description">Restaurant website featuring menu, online ordering, and location information.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>UI/UX</span>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-detail">
-                    <i class="fab fa-linkedin contact-icon"></i>
-                    <div class="contact-text">
-                        <h4 class="contact-label">LinkedIn</h4>
-                        <a href="https://linkedin.com/in/elizabeth-nuoma-akossey" target="_blank"
-                            class="contact-value">elizabeth-nuoma-akossey</a>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="pictures/techskillshub.png" alt="Techskills Hub">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://techskillshub.netlify.app/" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Techskills Hub</h3>
+                        <p class="project-description">Learning platform for technology skills and programming courses.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-detail">
-                    <i class="fab fa-github contact-icon"></i>
-                    <div class="contact-text">
-                        <h4 class="contact-label">GitHub</h4>
-                        <a href="https://github.com/ElizabethNuomaAkossey" target="_blank"
-                            class="contact-value">ElizabethNuomaAkossey</a>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ElizabethNuomaAkossey/Bank_Term_Deposit-_Prediction" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bank Term Deposit Prediction</h3>
+                        <p class="project-description">Machine learning model to predict customer term deposit subscriptions using classification algorithms.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>Pandas</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="send-message-card">
-                <h3 class="card-title">Send a Message</h3>
-                <p class="card-subtitle">I'll get back to you as soon as possible</p>
-                <form action="https://formspree.io/f/mpwlggjd", method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ElizabethNuomaAkossey/Cyberbully-Detection" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email">
+                    <div class="project-content">
+                        <h3 class="project-title">Cyberbully Detection Model</h3>
+                        <p class="project-description">AI model for detecting cyberbullying in text using natural language processing techniques.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>TensorFlow</span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject of your message">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
-                    </div>
-                    <button type="submit" class="send-message-btn">Send Message</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-social-icons">
-            <a href="https://linkedin.com/in/elizabeth-nuoma-akossey" target="_blank" aria-label="LinkedIn"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ElizabethNuomaAkossey" target="_blank" aria-label="GitHub"><i
-                    class="fab fa-github"></i></a>
-            <a href="mailto:elizabethnuomaakossey@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            <a href="tel:+233555088881" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Education & Certificates</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="card-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="education-item">
+                        <h4>Bachelor of Science, Midwifery</h4>
+                        <p class="institution">University for Development Studies, Tamale, Ghana</p>
+                        <p class="duration">September 2017 – July 2021</p>
+                    </div>
+                    
+                    <div class="awards-section">
+                        <h4><i class="fas fa-trophy"></i> Awards</h4>
+                        <ul class="awards-list">
+                            <li>Most Outstanding Student, Asustem Robotics</li>
+                            <li>Most Innovative Project, Blossom Academy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="card-header">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Certificates</h3>
+                    </div>
+                    <div class="certificates-list">
+                        <div class="cert-item">
+                            <span class="cert-number">1</span>
+                            <div class="cert-info">
+                                <h4>Web Development Fundamentals</h4>
+                                <p>IBM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-item">
+                            <span class="cert-number">2</span>
+                            <div class="cert-info">
+                                <h4>Data Analytics with SQL and PowerBI</h4>
+                                <p>Ghana India Kofi Annan Centre of Excellence</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-item">
+                            <span class="cert-number">3</span>
+                            <div class="cert-info">
+                                <h4>Python, Excel, Power BI, SQL</h4>
+                                <p>Blossom Academy</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-item">
+                            <span class="cert-number">4</span>
+                            <div class="cert-info">
+                                <h4>Python Programming and AI</h4>
+                                <p>Asustem Robotics</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cert-item">
+                            <span class="cert-number">5</span>
+                            <div class="cert-info">
+                                <h4>Python Programming</h4>
+                                <p>CAMFED</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="footer-copyright">&copy; 2025 Elizabeth Nuoma Akossey. All rights reserved.</p>
-        <p class="footer-info">Frontend Developer | Accra, Ghana</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out through any of these channels</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:elizabethnuomaakossey@gmail.com">elizabethnuomaakossey@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+233 555 088 881 / +233 205 358 06</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Accra, Ghana</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/elizabeth-nuoma-akossey" target="_blank">elizabeth-nuoma-akossey</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/ElizabethNuomaAkossey" target="_blank">ElizabethNuomaAkossey</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <p>I'll get back to you as soon as possible</p>
+                    
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Elizabeth Akossey. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
