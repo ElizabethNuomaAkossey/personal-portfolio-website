@@ -321,7 +321,7 @@
                 <h3 class="edu-card-title">
                     <i class="fas fa-book-open"></i> Education
                 </h3>
-                <p class="edu-card-subtext">Academic background</p>
+                <p class="edu-card-subtext1">Academic background</p>
     
                 <h4 class="edu-subtitle mt-6">Bachelor of Science, Midwifery</h4>
                 <p class="edu-card-subtext">University for Development Studies, Tamale, Ghana</p>
@@ -331,8 +331,8 @@
                     <i class="fas fa-award edu-award-icon"></i> Awards
                 </h4>
                 <ul class="edu-awards-list">
-                    <li class="edu-award-item">Most Outstanding Student, Asustem Robotics</li>
-                    <li class="edu-award-item">Most Innovative Project, Blossom Academy</li>
+                    <li class="edu-award-item"> <span class="bullet"></span> Most Outstanding Student, Asustem Robotics</li>
+                    <li class="edu-award-item"> <span class="bullet"></span> Most Innovative Project, Blossom Academy</li>
                 </ul>
             </div>
     
@@ -341,7 +341,7 @@
                 <h2 class="cert-card-title">
                     <i class="fas fa-certificate"></i> Certificates
                 </h2>
-                <p class="cert-card-subtext">Professional development</p>
+                <p class="cert-card-subtext1">Professional development</p>
     
                 <ul class="cert-list mt-6">
                     <li class="cert-item">
@@ -366,8 +366,75 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact">
-        <h2>Contact</h2>
+    <section class="contact-section", id="contact">
+        <h2 class="contact-heading">Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info-card">
+                <h3 class="card-title">Contact Information</h3>
+                <p class="card-subtitle">Feel free to reach out through any of these channels</p>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-text">
+                        <h4 class="contact-label">Email</h4>
+                        <a href="mailto:elizabethnuomaakossey@gmail.com"
+                            class="contact-value">elizabethnuomaakossey@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <div class="contact-text">
+                        <h4 class="contact-label">Phone</h4>
+                        <p class="contact-value">+233 555 088 881 / +233 205 358 06</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div class="contact-text">
+                        <h4 class="contact-label">Location</h4>
+                        <p class="contact-value">Accra, Ghana</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <div class="contact-text">
+                        <h4 class="contact-label">LinkedIn</h4>
+                        <a href="https://linkedin.com/in/elizabeth-nuoma-akossey" target="_blank"
+                            class="contact-value">elizabeth-nuoma-akossey</a>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class="fab fa-github contact-icon"></i>
+                    <div class="contact-text">
+                        <h4 class="contact-label">GitHub</h4>
+                        <a href="https://github.com/ElizabethNuomaAkossey" target="_blank"
+                            class="contact-value">ElizabethNuomaAkossey</a>
+                    </div>
+                </div>
+            </div>
+            <div class="send-message-card">
+                <h3 class="card-title">Send a Message</h3>
+                <p class="card-subtitle">I'll get back to you as soon as possible</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="send-message-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 </body>
 </html>

@@ -6,7 +6,7 @@
 body{
      font-family: 'Poppins', sans-serif;
      scroll-behavior: smooth;
-     background-color: #f2eded;
+     /* background-color: #f2eded; */
 }
 
 header{
@@ -481,7 +481,7 @@ nav ul li a:hover{
 }
 
 .projects-section {
-    padding: 50px 10%;
+    padding: 60px 30px;
     text-align: center;
     background-color: #fffdfd;
 }
@@ -495,8 +495,8 @@ nav ul li a:hover{
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .project-card {
@@ -515,6 +515,7 @@ nav ul li a:hover{
     height: 158px;
     object-fit: cover;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .project-title {
@@ -565,6 +566,8 @@ nav ul li a:hover{
 .edu-cert-section {
     padding: 60px 30px;
     background-color: #fcfafa;
+    margin: 0 30px; 
+    /* max-width: 1200px; */
 }
 
 .edu-cert-heading {
@@ -578,12 +581,10 @@ nav ul li a:hover{
 .edu-cert-container {
     display: flex;
     flex-wrap: wrap;
-    /* allow wrapping for smaller screens */
     gap: 2rem;
     /* max-width: 1200px; */
     /* width: 100%; */
     justify-content: center;
-    padding: 0 30px;
 }
 
 .edu-card,
@@ -600,10 +601,10 @@ nav ul li a:hover{
 /* Titles */
 .edu-card-title,
 .cert-card-title {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 600;
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     display: flex;
     align-items: center;
 }
@@ -621,13 +622,19 @@ nav ul li a:hover{
     font-size: 1.125rem;
     font-weight: 600;
     color: #333;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.edu-card-subtext,
-.cert-card-subtext {
+.edu-card-subtext1,
+.cert-card-subtext1 {
     color: #555;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
+    margin-left: 42px;
+}
+
+.edu-card-subtext{
+    color: #555;
 }
 
 /* Awards list */
@@ -635,8 +642,20 @@ nav ul li a:hover{
     margin-top: 0.5rem;
 }
 
+.edu-award-item .bullet {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    margin-bottom: 2px;
+    flex-shrink: 0;
+    margin-top: 0.6em;
+}
+
 .edu-award-item {
-    color: #555;
+    color: #000;
     margin-bottom: 0.25rem;
     display: flex;
     align-items: flex-start;
@@ -654,10 +673,11 @@ nav ul li a:hover{
 }
 
 .cert-item {
-    color: #555;
+    margin-top: 1rem;
     margin-bottom: 0.25rem;
     display: flex;
     align-items: flex-start;
+    color: #000;
 }
 
 .cert-number {
@@ -668,7 +688,155 @@ nav ul li a:hover{
 }
 
 
+/* --- Contact Section CSS --- */
+.contact-section {
+    padding: 60px 30px;
+    background-color: #f7f7f7;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+}
 
+/* heading styles for Contact section */
+.contact-heading {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact-info-card,
+.send-message-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border: 1px solid #eee;
+    padding: 2rem;
+    flex: 1 1 calc(50% - 2rem);
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-card .card-title,
+.send-message-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info-card .card-subtitle,
+.send-message-card .card-subtitle {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #a30d56;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-label {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.contact-value {
+    font-size: 0.95rem;
+    color: #555;
+    text-decoration: none;
+}
+
+.contact-value:hover {
+    color: #a30d56;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+    background-color: #fcfafa;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #a30d56;
+    box-shadow: 0 0 0 2px rgba(163, 13, 86, 0.2);
+}
+
+.send-message-btn {
+    background-color: #a30d56;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+.send-message-btn:hover {
+    background-color: #8a174f;
+}
 
 
 
