@@ -49,6 +49,9 @@
                         Elizabeth Nuoma
                         <span class="highlight">Akossey</span>
                     </h1>
+                    <button class="sound-btn" onclick="sayName()">
+                        <i class="fas fa-volume-high"></i>
+                    </button>
                     <p class="hero-subtitle">AI Developer | Data Scientist | Ghana</p>
                     <p class="hero-description">
                         Building intelligent solutions and responsive web interfaces that improve user experience and support business goals through data-driven insights.
@@ -75,7 +78,7 @@
                                 Resume <i class="fas fa-chevron-down"></i>
                             </button>
                             <div class="dropdown-menu">
-                                <a href="files/Elizabeth_Akossey_Resume.pdf" download>
+                                <a href="pictures/Elizabeth_Nuoma_Akossey_(Web Developer)..pdf" download>
                                     <i class="fas fa-download"></i> Download
                                 </a>
                                 <a href="#" onclick="playResumeSummary()">
@@ -210,7 +213,6 @@
                         <span>MySQL</span>
                         <span>MongoDB</span>
                         <span>MS SQL Server</span>
-                        <span>PostgreSQL</span>
                     </div>
                 </div>
             </div>
@@ -251,11 +253,58 @@
                             <span>Mentoring</span>
                             <span>Deployment</span>
                         </div>
+
+                        <!-- Experience Gallery -->
+                        <div class="experience-gallery">
+                            <h4>Role Gallery</h4>
+                            <div class="gallery-grid">
+                                <div class="gallery-item" onclick="openGallery(0)">
+                                    <img src="pictures/teaching.JPG" alt="Teaching web development fundamentals">
+                                    <div class="gallery-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-item" onclick="openGallery(1)">
+                                    <img src="pictures/project design.JPG" alt="Interactive coding activities">
+                                    <div class="gallery-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-item" onclick="openGallery(2)">
+                                    <img src="pictures/graduation.JPG" alt="Final exhibition presentation">
+                                    <div class="gallery-overlay">
+                                        <i class="fas fa-expand"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    </div>
+    </div>
+    </section>
+    
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeGallery()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <button class="nav-btn prev-btn" onclick="prevImage()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-btn next-btn" onclick="nextImage()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="gallery-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
@@ -278,7 +327,7 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Tarkwa Devs Company</h3>
-                        <p class="project-description">A modern company website showcasing development services and team portfolio.</p>
+                        <p class="project-description">A company website showcasing development services and team portfolio.</p>
                         <div class="project-tech">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -332,7 +381,6 @@
                         <div class="project-tech">
                             <span>HTML</span>
                             <span>CSS</span>
-                            <span>UI/UX</span>
                         </div>
                     </div>
                 </div>
@@ -357,7 +405,6 @@
                         <div class="project-tech">
                             <span>HTML</span>
                             <span>CSS</span>
-                            <span>JavaScript</span>
                         </div>
                     </div>
                 </div>
@@ -587,5 +634,70 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        function sayName() {
+                const audio = new Audio('pictures/recording/Name pronounciation.m4a'); // Replace with your actual file path
+
+                audio.play()
+                    .catch(error => {
+                        console.error('Unable to play audio:', error);
+                    });
+            }
+
+        // Gallery functions
+            function openGallery(index) {
+                currentImageIndex = index;
+                const modal = document.getElementById('galleryModal');
+                const modalImage = document.getElementById('modalImage');
+
+                modal.style.display = 'block';
+                modalImage.src = galleryImages[index].src;
+                modalImage.alt = galleryImages[index].alt;
+
+                updateDots();
+            }
+
+            function closeGallery() {
+                document.getElementById('galleryModal').style.display = 'none';
+            }
+
+            function nextImage() {
+                currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+                updateGalleryImage();
+            }
+
+            function prevImage() {
+                currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+                updateGalleryImage();
+            }
+
+            function currentSlide(index) {
+                currentImageIndex = index - 1;
+                updateGalleryImage();
+            }
+
+            function updateGalleryImage() {
+                const modalImage = document.getElementById('modalImage');
+                modalImage.src = galleryImages[currentImageIndex].src;
+                modalImage.alt = galleryImages[currentImageIndex].alt;
+                updateDots();
+            }
+
+            function updateDots() {
+                const dots = document.querySelectorAll('.dot');
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentImageIndex);
+                });
+            }
+
+            // Close modal when clicking outside
+            window.onclick = function (event) {
+                const modal = document.getElementById('galleryModal');
+                if (event.target === modal) {
+                    closeGallery();
+                }
+            }
+    </script>
 </body>
 </html>

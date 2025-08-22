@@ -390,19 +390,17 @@ window.addEventListener('scroll', function() {
 
 // Speech Synthesis Functions
 function playResumeSummary() {
-    const text = "This is Elizabeth Nuoma Akossey, an AI Developer from Ghana. She specializes in building intelligent solutions using Python, SQL, and machine learning techniques. Elizabeth has taught web development to over 50 students and actively contributes to open-source projects. Her expertise spans machine learning, natural language processing, data visualization, and business intelligence.";
-    
-    if ('speechSynthesis' in window) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.rate = 0.9;
-        utterance.pitch = 1;
-        speechSynthesis.speak(utterance);
-        
-        showNotification('Playing resume summary...', 'info');
-    } else {
-        showNotification('Speech synthesis not supported in this browser', 'error');
-    }
+    const audio = new Audio('pictures/recording/summary.m4a'); // Replace with your actual file path
+
+    audio.play()
+        .then(() => {
+            showNotification('Playing resume summary...', 'info');
+        })
+        .catch(error => {
+            showNotification('Unable to play audio: ' + error, 'error');
+        });
 }
+
 
 // Performance Optimization
 function debounce(func, wait) {
