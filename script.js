@@ -207,8 +207,8 @@ function initTypingAnimation() {
     if (!subtitle) return;
 
     const texts = [
-        'AI Developer | Data Scientist | Ghana',
-        'Machine Learning Engineer | Ghana',
+        'AI | Data Scientist | Ghana',
+        'Machine Learning | Ghana',
         'Web Development Coach | Ghana',
         'Python Developer | Ghana'
     ];
@@ -390,7 +390,7 @@ window.addEventListener('scroll', function() {
 
 // Speech Synthesis Functions
 function playResumeSummary() {
-    const audio = new Audio(''); // Replace with your actual file path
+    const audio = new Audio('pictures/recording/summary.m4a'); // Replace with your actual file path
 
     audio.play()
         .then(() => {
