@@ -229,6 +229,38 @@
                     <div class="experience-content">
                         <div class="experience-header">
                             <div class="company-info">
+                                <h3 class="company-name">INFINICITY LABS</h3>
+                                <p class="job-title">Frontend Developer
+                            </div>
+                            <div class="job-meta">
+                                <span class="job-type">Internship</span>
+                                <span class="job-duration">September 2025 – November 2025</span>
+                            </div>
+                        </div>
+            
+                        <ul class="responsibilities">
+                            <li>Developed and enhanced user interface components for the BisonGuard web application using React and Next.js.</li>
+                            <li>Collaborated with the backend developer to integrate APIs and ensure smooth functionality across features.</li>
+                            <li>Participated in weekly code reviews and demo sessions to present progress and apply feedback for improvements.</li>
+                            <li>Utilized Git for version control to manage updates, track changes, and support efficient remote teamwork.</li>
+                        </ul>
+            
+                        <div class="skill-tags">
+                            <span>NextJs</span>
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>Effective communication</span>
+                            <span>React</span>
+                            <span>Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div class="company-info">
                                 <h3 class="company-name">ASUSTEM ROBOTICS</h3>
                                 <p class="job-title">Web Development Coach</p>
                             </div>
@@ -314,21 +346,21 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="pictures/event-management.png" alt="Event Mangement">
+                        <img src="pictures/lifelink.png" alt="LifeLink GH">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/ElizabethNuomaAkossey/event_manager" class="project-link" aria-label="View Code">
+                                <a href="https://github.com/CLAVETA/LifeLink_Gh" class="project-link" aria-label="View Code">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" class="project-link" aria-label="Live Demo">
+                                <a href="https://lifelink-gh.onrender.com/" class="project-link" aria-label="Live Demo">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Event Management</h3>
-                        <p class="project-description">An interactive and responsive event management website for creating, viewing, and deleting events.</p>
+                        <h3 class="project-title">LifeLink GH</h3>
+                        <p class="project-description">A platform that connects blood donors with hospitals in need to save lives.</p>
                         <div class="project-tech">
                             <span>NiceGUI</span>
                             <span>Tailwind CSS</span>
@@ -352,7 +384,7 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Brahabobom M/A School</h3>
+                        <h3 class="project-title">Garden Fresh</h3>
                         <p class="project-description">Restaurant website featuring menu, online ordering, and location information..</p>
                         <div class="project-tech">
                             <span>NiceGUI</span>
@@ -389,7 +421,7 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="pictures/Brahabobom.png" alt="Techskills Hub">
+                        <img src="pictures/techskillshub.png" alt="Techskills Hub">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link" aria-label="View Code">
@@ -489,8 +521,9 @@
                     <div class="awards-section">
                         <h4><i class=""></i> Awards</h4>
                         <ul class="awards-list">
-                            <li>Most Outstanding Student, Asustem Robotics</li>
+                            <li>Dedicated and Committed, MEST Africa</li>
                             <li>Most Innovative Project, Blossom Academy</li>
+                            <li>Most Outstanding Student, Asustem Robotics</li>
                         </ul>
                     </div>
                 </div>
@@ -640,7 +673,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Elizabeth Akossey. All rights reserved.</p>
+            <p>&copy; 2025 Elizabeth N. Akossey. All rights reserved.</p>
         </div>
     </footer>
 
@@ -656,59 +689,51 @@
                     });
             }
 
-        // Gallery functions
-            function openGallery(index) {
-                currentImageIndex = index;
-                const modal = document.getElementById('galleryModal');
-                const modalImage = document.getElementById('modalImage');
+       let currentIndex = 0;
 
-                modal.style.display = 'block';
-                modalImage.src = galleryImages[index].src;
-                modalImage.alt = galleryImages[index].alt;
+        // Automatically get all gallery image paths
+        const galleryImages = Array.from(document.querySelectorAll(".gallery-grid img"))
+            .map(img => img.src);
 
-                updateDots();
-            }
+        function openGallery(index) {
+            currentIndex = index;
+            updateGalleryImage();
+            document.getElementById("galleryModal").style.display = "flex";
+            updateDots();
+        }
 
-            function closeGallery() {
-                document.getElementById('galleryModal').style.display = 'none';
-            }
+        function closeGallery() {
+            document.getElementById("galleryModal").style.display = "none";
+        }
 
-            function nextImage() {
-                currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
-                updateGalleryImage();
-            }
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            updateGalleryImage();
+            updateDots();
+        }
 
-            function prevImage() {
-                currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
-                updateGalleryImage();
-            }
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateGalleryImage();
+            updateDots();
+        }
 
-            function currentSlide(index) {
-                currentImageIndex = index - 1;
-                updateGalleryImage();
-            }
+        function currentSlide(index) {
+            currentIndex = index - 1;
+            updateGalleryImage();
+            updateDots();
+        }
 
-            function updateGalleryImage() {
-                const modalImage = document.getElementById('modalImage');
-                modalImage.src = galleryImages[currentImageIndex].src;
-                modalImage.alt = galleryImages[currentImageIndex].alt;
-                updateDots();
-            }
+        function updateGalleryImage() {
+            document.getElementById("modalImage").src = galleryImages[currentIndex];
+        }
 
-            function updateDots() {
-                const dots = document.querySelectorAll('.dot');
-                dots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === currentImageIndex);
-                });
-            }
+        function updateDots() {
+            const dots = document.querySelectorAll(".dot");
+            dots.forEach(dot => dot.classList.remove("active"));
+            dots[currentIndex].classList.add("active");
+        }
 
-            // Close modal when clicking outside
-            window.onclick = function (event) {
-                const modal = document.getElementById('galleryModal');
-                if (event.target === modal) {
-                    closeGallery();
-                }
-            }
     </script>
 </body>
 </html>
