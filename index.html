@@ -78,7 +78,7 @@
                                 Resume <i class="fas fa-chevron-down"></i>
                             </button>
                             <div class="dropdown-menu">
-                                <a href="pictures/Elizabeth_Nuoma_Akossey_(Frontend Developer).pdf" download>
+                                <a href="pictures/Elizabeth_Nuoma_Akossey_(Frontend Web Developer).docx.pdf" download>
                                     <i class="fas fa-download"></i> Download
                                 </a>
                                 <a href="#" onclick="playResumeSummary()">
@@ -172,6 +172,7 @@
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
+                        <span>TypeScript</span>
                     </div>
                 </div>
 
@@ -182,6 +183,8 @@
                     <h3>Frameworks & Libraries</h3>
                     <div class="skill-tags">
                         <span>NiceGUI</span>
+                        <span>React</span>
+                        <span>NextJs</span>
                         <span>Tkinter</span>
                         <span>Tailwind CSS</span>
                         <span>Pandas</span>
@@ -521,7 +524,7 @@
                     <div class="awards-section">
                         <h4><i class=""></i> Awards</h4>
                         <ul class="awards-list">
-                            <li>Dedicated and Committed, MEST Africa</li>
+                            <li>Dedication and Commitment, MEST Africa</li>
                             <li>Most Innovative Project, Blossom Academy</li>
                             <li>Most Outstanding Student, Asustem Robotics</li>
                         </ul>
@@ -552,8 +555,8 @@
                         <div class="cert-item">
                             <span class="cert-number">3</span>
                             <div class="cert-info">
-                                <h4>Data Analytics with SQL and PowerBI</h4>
-                                <p>Ghana India Kofi Annan Centre of Excellence</p>
+                                <h4>Google Prompting Essentials</h4>
+                                <p>Coursera</p>
                             </div>
                         </div>
                         
@@ -691,48 +694,48 @@
 
        let currentIndex = 0;
 
-        // Automatically get all gallery image paths
-        const galleryImages = Array.from(document.querySelectorAll(".gallery-grid img"))
-            .map(img => img.src);
+// Automatically get all gallery image paths
+const galleryImages = Array.from(document.querySelectorAll(".gallery-grid img"))
+    .map(img => img.src);
 
-        function openGallery(index) {
-            currentIndex = index;
-            updateGalleryImage();
-            document.getElementById("galleryModal").style.display = "flex";
-            updateDots();
-        }
+function openGallery(index) {
+    currentIndex = index;
+    updateGalleryImage();
+    document.getElementById("galleryModal").style.display = "flex";
+    updateDots();
+}
 
-        function closeGallery() {
-            document.getElementById("galleryModal").style.display = "none";
-        }
+function closeGallery() {
+    document.getElementById("galleryModal").style.display = "none";
+}
 
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % galleryImages.length;
-            updateGalleryImage();
-            updateDots();
-        }
+function nextImage() {
+    currentIndex = (currentIndex + 1) % galleryImages.length;
+    updateGalleryImage();
+    updateDots();
+}
 
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-            updateGalleryImage();
-            updateDots();
-        }
+function prevImage() {
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateGalleryImage();
+    updateDots();
+}
 
-        function currentSlide(index) {
-            currentIndex = index - 1;
-            updateGalleryImage();
-            updateDots();
-        }
+function currentSlide(index) {
+    currentIndex = index - 1;
+    updateGalleryImage();
+    updateDots();
+}
 
-        function updateGalleryImage() {
-            document.getElementById("modalImage").src = galleryImages[currentIndex];
-        }
+function updateGalleryImage() {
+    document.getElementById("modalImage").src = galleryImages[currentIndex];
+}
 
-        function updateDots() {
-            const dots = document.querySelectorAll(".dot");
-            dots.forEach(dot => dot.classList.remove("active"));
-            dots[currentIndex].classList.add("active");
-        }
+function updateDots() {
+    const dots = document.querySelectorAll(".dot");
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[currentIndex].classList.add("active");
+}
 
     </script>
 </body>
